@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: #979797;
+}
+
+/* header部分 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+}
+
+.header__logo {
+  width: 130px;
+}
+
+.header__nav--list {
+  display: flex;
+}
+
+.header__nav--list a {
+  text-decoration: none;
+}
+
+.header__nav--item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* top部分 */
+.top {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.top__img {
+  margin: 0 0 0 auto;
+  display: block;
+  width: 50%;
+}
+
+.top__title {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.top__title h1 {
+  font-size: 56px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #d1236b;
+  font-family: "Indie Flower", cursive;
+}
+
+.top__title h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #d1236b;
+}
+
+.top__title p {
+  line-height: 1.5;
+}
+
+.top__title span {
+  color: #21a3c4;
+}
+
+/* 共通部分 */
+.small-title {
+  color: #d1236b;
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.detail-title {
+  color: #7d7d7d;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+/* News部分 */
+.news {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.news__list {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: solid #979797 1px;
+}
+
+.news__content {
+  padding-top: 30px;
+  border-top: solid #979797 1.5px;
+  border-bottom: solid #979797 1.5px;
+}
+
+.news__list--title,
+.news__list--label {
+  margin-right: 30px;
+}
+
+.news__list--label {
+  background-color: #d1236b;
+  color: #fff;
+  border-radius: 20px;
+  width: 80px;
+  padding: 2px 0;
+  line-height: inherit;
+  text-align: center;
+}
+
+/* about部分 */
+.about {
+  background-color: #dddddd;
+  height: 455px;
+  margin-bottom: 150px;
+}
+
+.about__all {
+  position: relative;
+  top: 50px;
+  left: 0;
+}
+
+.about h2,
+.about h3 {
+  text-align: center;
+}
+
+.about__img {
+  width: 400px;
+  float: right;
+  margin-left: 100px;
+}
+
+.about__img img {
+  width: 100%;
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+}
+
+.about__text {
+  width: 380px;
+  margin-right: 80px;
+}
+
+.about__text p {
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+/* service部分 */
+#service {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.service__grid {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service__box1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: #d13a79;
+}
+
+.service__box1 h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.service__box1 p {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2;
+  color: #fff;
+}
+
+.service__box1 .service__icn {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.service__box2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #b1669a;
+  display: flex;
+}
+
+.service__box2 .service__icn,
+.service__box3 .service__icn {
+  position: relative;
+  top: 15%;
+  left: 25px;
+  margin-right: 15px;
+}
+
+.service__box3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #a387a2;
+  display: flex;
+}
+
+.service__text {
+  width: 70%;
+  padding: 65px 0 65px 30px;
+}
+
+.service__text h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.service__text p {
+  line-height: 2;
+  color: #fff;
+}
+
+.service__icn {
+  width: 180px;
+}
+
+.service__icn img {
+  width: 100%;
+}
+
+/* blog部分 */
+#blog {
+  background-color: #dddddd;
+  height: 620px;
+  margin-bottom: 150px;
+}
+
+.blog__all {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  left: 0;
+}
+
+.blog__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#blog img {
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.blog__card {
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.blog__img {
+  position: relative;
+}
+
+.blog__cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  border-top-left-radius: 15px;
+  background-color: #d1236b;
+  color: #fff;
+}
+
+.blog__content {
+  padding: 20px;
+}
+
+.blog__content--title {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.blog__content--tag {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__btn {
+  display: block;
+  width: 200px;
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 30px;
+  border: 1.5px solid #d1236b;
+  text-decoration: none;
+  color: #d1236b;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* company部分 */
+#company {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+#company table {
+  width: 100%;
+}
+
+#company table th,
+#company table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+}
+
+#company table th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+
+/* info部分 */
+#info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.recruit__img,
+.interview__img {
+  width: 720px;
+  position: relative;
+}
+
+.recruit__img img,
+.interview__img img {
+  width: 100%;
+}
+
+.recruit__title,
+.interview__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+/* contact部分 */
+.contact__title {
+  text-align: center;
+}
+
+.contact__line {
+  width: 2px;
+  height: 40px;
+  margin: 20px auto;
+  background-color: #d1236b;
+}
+
+.contact__btn {
+  position: relative;
+  display: block;
+  width: 230px;
+  background: linear-gradient(90deg, #e72878, #a3047c);
+  box-shadow: 0px 2px 2px 1px #dcdcdc;
+  border-bottom: solid 7px #990358;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.contact__btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  background: url(../img/mailicon.svg) no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  transform: translate(0, -50%);
+}
+
+/* footer部分 */
+#footer {
+  width: 100%;
+  background-color: #dddddd;
+  padding: 20px 0;
+  text-align: center;
+}
+#footer small {
+  font-size: 12px;
+}
