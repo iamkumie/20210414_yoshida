@@ -132,8 +132,8 @@
   left: 0;
 }
 
-.about h2,
-.about h3 {
+#about h2,
+#about h3 {
   text-align: center;
 }
 
@@ -171,7 +171,7 @@
 
 .service__grid {
   display: grid;
-  grid-template-rows: 250px 250px;
+  grid-template-rows: 270px 270px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -211,7 +211,7 @@
 .service__box2 .service__icn,
 .service__box3 .service__icn {
   position: relative;
-  top: 15%;
+  top: 20%;
   left: 25px;
   margin-right: 15px;
 }
@@ -224,8 +224,8 @@
 }
 
 .service__text {
-  width: 70%;
-  padding: 65px 0 65px 30px;
+  width: 85%;
+  padding: 45px 15px;
 }
 
 .service__text h4 {
@@ -235,7 +235,7 @@
 }
 
 .service__text p {
-  line-height: 2;
+  line-height: 1.5;
   color: #fff;
 }
 
